@@ -1,9 +1,11 @@
 /* Object Oriented CSS and BEM convention */
 /* always separate the structure and the skin */
-/* separate --  is when we want to create another skin*/
+/* separate by - is when we separating two words, eg.icon container=> icon-container. entire new class, not modify the skin  */
+/* separate --  is when we want to create another skin from base class, (variation or modifier)*/
 /* separate by __ is when this is the element inside the component/block . in html cant be at its own*/
 
-/* Working with icons. with Css we can modify svg icon, such as, color etc */
+/* Working with icons. 
+with Css we can modify svg icon, such as, color using fill*/
 /* optimization technique : svg sprite. each icon has id*/
 
 /* CODES  */
@@ -153,4 +155,26 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* ICONS */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background: #f3f9ff;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  /* span :  inline elements. width and height has no effects*/
+  /*inline block : when we want to put another element next to it*/
+  display: inline-flex;
+  justify-content: center; /* horizontal axes*/
+  align-items: center; /*vertical*/
 }
