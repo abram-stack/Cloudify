@@ -1,6 +1,12 @@
-/* Object Oriented CSS */
+/* Object Oriented CSS and BEM convention */
 /* always separate the structure and the skin */
+/* separate --  is when we want to create another skin*/
+/* separate by __ is when this is the element inside the component/block . in html cant be at its own*/
 
+/* Working with icons. with Css we can modify svg icon, such as, color etc */
+/* optimization technique : svg sprite. each icon has id*/
+
+/* CODES  */
 /* define global variable */
 :root {
   --color-primary: #2584ff;
@@ -118,5 +124,33 @@ a {
   }
   .badge--small {
     font-size: 1.2rem;
+  }
+}
+
+/* LISTS */
+.list {
+  list-style: none;
+  color: var(--color-headings);
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(/images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
