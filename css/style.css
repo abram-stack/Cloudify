@@ -19,6 +19,12 @@ with Css we can modify svg icon, such as, color using fill*/
   --color-body: #918ca4;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* TYPOGRAPHY */
 html {
   /* calculation trick : by default is 16px */
@@ -177,4 +183,68 @@ a {
   display: inline-flex;
   justify-content: center; /* horizontal axes*/
   align-items: center; /*vertical*/
+}
+
+/* BUTTONS */
+/* should we use button VS a element ? */
+/* by default the browser  set button element to box-sizing : border-box*/
+/* a element, wider that button. reason box-sizing is not border-box*/
+/* anchor element is inline by default , to make effects on width: inline-block */
+.btn {
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+}
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+}
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+}
+.btn--accent:hover {
+  background: #eb623f;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
