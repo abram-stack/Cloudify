@@ -2,7 +2,7 @@
 /* always separate the structure and the skin */
 /* separate by - is when we separating two words, eg.icon container=> icon-container. entire new class, not modify the skin  */
 /* separate --  is when we want to create another skin from base class, (variation or modifier)*/
-/* separate by __ is when this is the element inside the component/block . in html cant be at its own*/
+/* separate by __ is when this is the element inside the component/block . in html cant be at its own. or part of the parents class*/
 
 /* Working with icons. 
 with Css we can modify svg icon, such as, color using fill*/
@@ -288,4 +288,29 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* CARD */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3; /* hor verti 20smooth, 10px big*/
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+  /* we have overflow: where the top borders now sharp, because we 
+  give the header background color, it grows bigger than the container */
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
 }
