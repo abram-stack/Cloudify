@@ -147,20 +147,6 @@
     <defs></defs>
     <path d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z" transform="translate(-10.9 -9.3)"></path>
   </symbol>
-  <symbol id="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
-    <defs></defs>
-    <circle cx="25.5" cy="25.5" r="25.5"></circle>
-    <rect x="24.4" y="27.9" width="1.6" height="15.24" rx="0.8" transform="matrix(0.78, -0.63, 0.63, 0.78, -21.26, 15.39)"></rect>
-    <rect x="33.3" y="27.9" width="1.6" height="15.24" rx="0.8" transform="translate(24 -21.9) rotate(37.3)"></rect>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-bottom">
-    <defs></defs>
-    <title></title>
-    <g id="chevron-bottom">
-      <line x1="16" x2="7" y1="20.5" y2="11.5"></line>
-      <line x1="25" x2="16" y1="11.5" y2="20.5"></line>
-    </g>
-  </symbol>
   <symbol version="1.1" id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 501.656 501.656">
     <g>
       <g>
@@ -217,6 +203,12 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" id="tick">
     <defs></defs>
     <path id="Shape_10_copy_5" d="M2,4L6,8l8-8"></path>
+  </symbol>
+  <symbol fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="down_chevron_icon">
+    <polyline points="6 9 12 15 18 9"></polyline>
+  </symbol>
+  <symbol id="chevron" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+    <path d="M8,0C3.582,0,0,3.582,0,8s3.582,8,8,8s8-3.582,8-8S12.418,0,8,0z M8,11.207L2.646,5.854l0.707-0.707L8,9.793l4.646-4.646  l0.707,0.707L8,11.207z"></path>
   </symbol>
   <symbol version="1.1" id="wordpress" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 512 512">
     <g>
