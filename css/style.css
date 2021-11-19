@@ -512,6 +512,7 @@ a {
   margin-top: 0;
   font-size: 3rem;
 }
+/*by default grid element is stretched. */
 .callout .btn {
   justify-self: center;
   align-self: center;
